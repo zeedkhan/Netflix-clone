@@ -1,0 +1,4 @@
+Plan for backend
+1. Create the server
+2. Create api receiver for json
+3. Create route
