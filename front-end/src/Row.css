@@ -1,0 +1,39 @@
+.row {
+  margin-left: 20px;
+  color: white;
+}
+
+.row_posters {
+  display: flex;
+  overflow-y: hidden;
+  /* make a scoll in landscape or axis y */
+  overflow-x: scroll;
+  padding: 20px;
+  /* we padding cuz it will not corpping out our row or a movie*/
+}
+
+.row_posters::-webkit-scrollbar {
+  display: none;
+  /* .row_posters::-webkit-scrollbar >>>>>>> Tells every web browser doesn't show a scrollbar */
+}
+
+.row_poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms;
+  /* transition is making row has delay for cursor pointing at a row */
+}
+
+.row_poster:hover {
+  transform: scale(1.08);
+  /* scale of row for pointing and poping up of a row */
+}
+
+.row_posterLarge {
+  max-height: 250px;
+}
+/* .row_posterLarge:hover {
+  transform: scale(1.09);
+  /* scale of row for pointing and poping up of a row */
